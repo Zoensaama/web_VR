@@ -1,4 +1,5 @@
 #DNMADE2
 
 ##WEBVR
-*[texture](../VR/vr_texture.html)
+
+*[texture](../web_VR/vr_texture.html)
