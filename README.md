@@ -2,7 +2,8 @@
 
 ##mZoe
 
-*[texture](https://zoensaama.github.io/web_VR/)
+*[texture](https://zoensaama.github.io/web_VR/vr_texture.html)
+
 
 
 
