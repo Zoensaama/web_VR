@@ -12,7 +12,8 @@
 
 - WHAT A MESS
 * [What A Mess V1](https://zoensaama.github.io/web_VR/WhatAMess.html)
-* [What A Mess V2](https://zoensaama.github.io/web_VR/WhatAMess_V2.html)
+* [What A Mess V2](https://zoensaama.github.io/web_VR/WhatAMessV2.html)
+
 
 
 
