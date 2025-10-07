@@ -1,0 +1,88 @@
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <img id="briqueL" src="./assets/img/black_and_white_spiral_background_2604.jpg">
+        <img id="brique" src="./assets/img/black_and_white_spiral_background_2604.jpg">
+        <img id="start" src="./assets/img/start.jpg">
+        <img id="finish" src="./assets/img/finish.jpg">
+        <img id="pelouse" src="./assets/img/pelouse.jpg">
+        <img id="sky" src="./assets/img/sky.jpg">
+        <a-asset-item id="duck-glb" src="./assets/3Dmodels/duck_walk_free.glb"></a-asset-item>
+
+
+        
+        <a-mixin id="short" geometry="width: 0.5; height: 3; depth: 0"></a-mixin>
+        <a-mixin id="long" geometry="width: 1; height: 3; depth: 0 "></a-mixin>
+        <a-mixin id="noDepth" geometry="depth: 0 ; height: 3"></a-mixin>
+        <a-mixin id="depth" geometry="depth: 0.1 ; height: 3"></a-mixin>
+        <a-mixin id="90" rotation="0 90 0"></a-mixin>
+        <a-mixin id="180" rotation="0 180 0"></a-mixin>
+
+  
+      </a-assets>
+
+      <!-- formes -->
+      <!-- <a-entity position="1 2 -3"   scale="0.5 0.5 0.5" color="#4CC3D9" geometry="primitive: box" ></a-entity> -->
+      <a-box src="#brique" position="-0.25 1.5 0" mixin="short 180"></a-box>
+      <a-plane src="#start" position="-0.25 1.5 0.01" rotation="0 360 0" width="0.5" height="0.5"></a-plane>
+      <a-box src="#brique" position="-1.5 1.5 0.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="-1 1.5 0.5" mixin="long 180"></a-box>
+      <a-box src="#brique" position="-1.75 1.5 0" mixin="short 180"></a-box>
+      <a-box src="#brique" position="-0.5 1.5 1.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="0 1.5 0.5" mixin="long 90"></a-box>
+      <a-box src="#brique" position="-0.25 1.5 1" mixin="short 180"></a-box>
+      <a-box src="#brique" position="-0.5 1.5 0.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="-1 1.5 1.5" mixin="long 180"></a-box>
+      <a-box src="#brique" position="1 1.5 1.5" mixin="long 180"></a-box>
+      <a-box src="#brique" position="1 1.5 0.75" mixin="90 noDepth" width="1.5"></a-box>
+      <a-box src="#brique" position="0.75 1.5 0" mixin="short 180"></a-box>
+      <a-box src="#brique" position="0.5 1.5 -0.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="-0.75 1.5 -0.5" mixin="180 noDepth" width="2.5"></a-box>
+      <a-box src="#brique" position="-1 1.5 -0.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="1.5 1.5 -0.5" mixin="long 90"></a-box>
+      <a-box src="#brique" position="1.25 1.5 -0.5" mixin="short 180"></a-box>
+      <a-box src="#brique" position="1 1.5 -0.75" mixin="short 90"></a-box>
+      <a-box src="#brique" position="0.5 1.5 -1" mixin="long 180"></a-box>
+      <a-box src="#brique" position="-0.75 1.5 -1" mixin="short 180"></a-box>
+
+      <a-box src="#brique" position="-1 1.5 -1.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="-1.5 1.5 -1.5" mixin="long 180"></a-box>  
+      <a-box src="#brique" position="-1.5 1.5 -0.75" mixin="short 90"></a-box>
+      <a-box src="#brique" position="1 1.5 -1.25" mixin="short 90"></a-box>
+      <a-box src="#brique" position="0.5 1.5 -1.5" mixin="long 180"></a-box>
+      <a-box src="#brique" position="0 1.5 -1.75" mixin="short 90"></a-box>
+
+      
+      <!-- contours --> 
+      <a-box src="#briqueL" position="0 1.5 2" mixin="180 depth" width="4"></a-box>
+      <a-box src="#briqueL" position="2 1.5 0" mixin="90 depth" width="4"></a-box>
+      <a-box src="#briqueL" position="0 1.5 -2" mixin="180 depth" width="4"></a-box>
+      <a-box src="#briqueL" position="-2 1.5 0.75" mixin="90 depth" width="2.5"></a-box>
+      <a-box src="#brique" position="-2 1.5 -1.5" mixin="90 depth" width="1"></a-box>
+       
+      <!-- environnement --> 
+      <a-plane src="#pelouse" repeat="8 8" position="0 0 0" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-plane src="#finish" position="-2.25 0 -0.75" rotation="-90 90 0" width="0.5" height="0.5"></a-plane>
+      <a-sky src="#sky"></a-sky>
+
+      <!-- animal --> 
+      <a-entity gltf-model="#duck-glb" position="-1.77084 0.00699 0.52935" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+      <a-entity gltf-model="#duck-glb" position="-0.17226 0.00699 1.37022" rotation="0 40 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+      <a-entity gltf-model="#duck-glb" position="1.25771 0.00699 1.12858" rotation="0 180 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+      <a-entity gltf-model="#duck-glb" position="-1.36585 0.00699 -1.2266" rotation="0 200 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+
+
+
+    </a-scene>
+
+  </body>
+
+</html>
