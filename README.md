@@ -9,6 +9,7 @@
 * [Labyrinthe (4*4)](https://zoensaama.github.io/web_VR/labyrinthe_petit.html)
 * [Labyrinthe (4*4) V2](https://zoensaama.github.io/web_VR/labyrinthe_v2.html)
 * [Labyrinthe (4*4) V3 Animal](https://zoensaama.github.io/web_VR/labyrinthe_v3_animal.html)
+* [Labyrinthe (4*4) Final](https://zoensaama.github.io/web_VR/labyrinthe_v4.html)
 
 ## WHAT A MESS
 * [What A Mess V1](https://zoensaama.github.io/web_VR/WhatAMess.html)
@@ -16,6 +17,7 @@
 
 ## AR
 * [testAR](https://zoensaama.github.io/web_VR/test_anim_perso_AR.html)
+
 
 
 
