@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/@c-frame/aframe-physics-system@4.2.2/dist/aframe-physics-system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe-extras@7.5.4/dist/aframe-extras.min.js"></script>
+
+</head>
+
+<body>
+
+    <a-scene physics>
+        <a-assets>
+
+<!-- objets -->
+            <a-asset-item id="rug1-glb" src="./assets/3Dmodels/rug.glb"></a-asset-item>
+     
+<!-- peluches         -->
+            <a-asset-item id="ourson-glb" src="./assets/3Dmodels/teddy_bear.glb"></a-asset-item>  
+            <a-asset-item id="baleine-glb" src="./assets/3Dmodels/denim_whale_plush.glb"></a-asset-item>  
+
+<!-- animal             -->
+            <a-asset-item id="snail-glb" src="./assets/3Dmodels/basical_snail.glb"></a-asset-item>
+
+<!-- murs et sol -->
+            <img id="wall1" src="./assets/img/kilim1.jpg">
+            <img id="kilim1" src="./assets/img/kilim1.jpg">
+
+        </a-assets>
+
+
+<!-- tapis -->
+        <a-entity gltf-model="#rug1-glb" position="0.02214 0 0.08449" scale="1.5 1.5 1.5" rotation="0 79.11 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-1.40805 1.9043 -0.30157" scale="1.3 1.3 1.3" rotation="-8.54 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.09615 1.5551 -1.37006" scale="1.5 1.5 1.5" rotation="0 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.09615 1.23447 -1.37006" scale="1.5 1.5 1.5" rotation="180 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-1.42712 0.6859 0.44986" rotation="-13.35 180 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-0.30546 -0.00805 0.51586" scale="1.2 1.2 1.2" rotation="0 -49.77 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.39121 0 -0.76391" scale="1.2 1.2 1.2" rotation="0 270 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.08601 1.79525 1.34364" scale="1.4 1.4 1.4" rotation="-9.37 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.2757 1.07498 1.34364" scale="1.4 1.4 1.4" rotation="167.27 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-0.16355 1.52551 1.34364" scale="1.4 1.4 1.4" rotation="183.58 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="1.47865 1.74575 0.11127" scale="1.4 1.4 1.4" rotation="-12.53 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="1.47865 1.6425 -0.25222" scale="1.4 1.4 1.4" rotation="-177.08000000000004 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="1.47865 1.20083 -0.0063" scale="1.4 1.4 1.4" rotation="0 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="0.01021 2.4 0.57806" scale="1.4 1.4 1.4" rotation="0 90 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-0.08422 2.4 -0.43791" scale="1.4 1.4 1.4" rotation="1.62 -74.32 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-0.08422 2.39 0.08455" scale="1.4 1.4 1.4" rotation="1.62 -125.46000000000001 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-1.43814 1.70057 0.67929" rotation="150.24 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-1.43649 1.61303 -0.52319" rotation="46.66 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#rug1-glb" position="-0.21994 1.62269 -1.5016" rotation="180 90 90" dynamic-body="sphereRadius: NaN" velocity="" scale="1.5 1.5 1.5"></a-entity>
+  
+
+<!-- animaux         -->
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="1.43504 1.91894 0.23282" scale="0.3 0.3 0.3" rotation="-44.27000000000001 -4.44 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.35131 2.42515 0.4862" scale="0.3 0.3 0.3" rotation="0 -35.89 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.02962 2.40158 -0.66213" scale="0.25 0.25 0.25" rotation="0 74.04 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="1.45023 1.32489 -0.57356" scale="0.2 0.2 0.2" rotation="151.94 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="1.45023 2.12728 -0.85718" scale="0.2 0.2 0.2" rotation="60.09 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="1.45023 1.3029 0.58689" scale="0.4 0.4 0.4" rotation="190 0 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.96283 1.73089 1.36713" scale="0.25 0.25 0.25" rotation="-17.49 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.41733 2.0477 1.36713" scale="0.4 0.4 0.4" rotation="119.99999999999999 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.57482 1.73904 1.37329" scale="0.3 0.3 0.3" rotation="29.999999999999996 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.00642 1.49971 1.36982" scale="0.2 0.2 0.2" rotation="-90 90 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-1.41923 1.81633 -0.4801" scale="0.2 0.2 0.2" rotation="-33.59 0 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-1.41923 1.98405 0.7911" scale="0.3 0.3 0.3" rotation="100 0 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.83049 2.17093 -1.42055" scale="0.3 0.3 0.3" rotation="-14.999999999999998 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.45988 1.63943 -1.42055" scale="0.2 0.2 0.2" rotation="-59.99999999999999 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.39835 2.41263 -0.06558" scale="0.4 0.4 0.4" rotation="0 -24.47 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.72983 2.44664 -0.6723" scale="0.2 0.2 0.2" rotation="0 -47.02 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.36393 2.45244 0.90271" scale="0.2 0.2 0.2" rotation="-12.33 -80 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.69854 2.45244 -0.09258" scale="0.2 0.2 0.2" rotation="0 40 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.50273 2.45244 -0.60131" scale="0.2 0.2 0.2" rotation="0 -50 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="0.07556 2.45244 0.01437" scale="0.2 0.2 0.2" rotation="0 180 180" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.53224 1.57408 -1.38757" scale="0.3 0.3 0.3" rotation="130 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-1.43196 1.64979 0.1662" scale="0.2 0.2 0.2" rotation="-96.38 0 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-1.43774 2.02255 -1.01433" scale="0.35 0.35 0.35" rotation="119.99999999999999 0 -90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#snail-glb" animation-mixer="" position="-0.08252 2.02255 -1.41117" scale="0.4 0.4 0.4" rotation="59.99999999999999 90 90" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+
+
+<!-- peluches   -->
+        <a-entity gltf-model="#ourson-glb" position="0.92041 0.54785 0.54321" scale="0.6 0.6 0.6" rotation="-59.15 -160 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.53078 0.5287 0.84548" scale="2.1 2.1 2.1" rotation="0 -20 29.999999999999996" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.97273 0.57668 0.35135" scale="2.1 2.1 2.1" rotation="0 80.1 8.55" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.14198 0.86414 -0.69688" scale="1.9 1.9 1.9" rotation="0 -156.03 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.83587 0.7689 -0.46691" scale="0.6 0.6 0.6" rotation="-55.790000000000006 -1.25 0.1" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.48545 0.71665 0.78975" scale="0.5 0.5 0.5" rotation="-52.25 79.11 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.39535 0.78888 -1.06855" scale="1.5 1.5 1.5" rotation="-19.29 0 -4.44" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="0.85599 1.10379 -0.85981" scale="0.4 0.4 0.4" rotation="-70 143.95 -4.96" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="1.03096 0.61241 -0.01821" scale="1.9 1.9 1.9" rotation="-47.92 -107.82 6.21" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.45463 0.16744 0.60094" scale="0.2 0.2 0.2" rotation="-35 103.46 -2.2" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.12507 0.85667 1.09849" scale="0.4 0.4 0.4" rotation="-42.49 191.29 -23.03" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.93604 1.13012 -0.46055" scale="1.7 1.7 1.7" rotation="40 -90 10.14" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.00546 1.28465 -1.17492" scale="0.4 0.4 0.4" rotation="-24.84 20 5" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.92359 0.93411 0.83143" scale="1.2 1.2 1.2" rotation="22.54 59.36 -14.32" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.97594 1.0761 -0.08985" scale="0.3 0.3 0.35" rotation="-66.84 180 -15.430000000000001" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-1.15743 0.84718 1.00278" scale="0.4 0.4 0.4" rotation="-6.98 116.22 -55.04" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.75394 -0.03409 0.77743" scale="3 3 3" rotation="8.09 29.740000000000002 -4.33" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.39795 0.00226 -0.80807" scale="3.2 3.2 3.2" rotation="-2.62 -12.480000000000002 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="0.78373 0.55144 -0.31837" scale="0.7 0.7 0.7" rotation="-47.49 0 0" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.90362 0.03985 0.48603" scale="2.8 2.8 2.8" rotation="-2.01 -80.01 1.93" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.33329 0.60139 -0.88454" scale="0.6 0.6 0.6" rotation="-76.83 -112.1 -10.15" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.58501 0.74405 1.15473" scale="1.1 1.1 1.1" rotation="-27.51 180 3.46" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.83437 0.98337 0.51118" scale="1.1 1.1 1.1" rotation="5.95 -28.500000000000004 8.1" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.25695 0.33793 -0.20071" scale="0.4 0.4 0.4" rotation="-35.35 0 -15.790000000000001" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="0.117 0.38323 0.35231" scale="0.45 0.45 0.45" rotation="-31.3 180 -5.69" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.05607 0.73692 0.86184" scale="1.5 1.5 1.5" rotation="-22.65 153.46 15.010000000000002" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.3362 0.80679 0.99493" scale="0.8 0.8 0.8" rotation="-10 125.47000000000001 15.010000000000002" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-1.09665 1.39542 0.99527" rotation="-4.77 6.22 59.99999999999999" dynamic-body="sphereRadius: NaN" velocity="" scale="1.5 1.5 1.5"></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="0.37884 1.26055 1.18543" scale="0.45 0.45 0.45" rotation="-24.22 177.86 70.7" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-1.31454 1.12291 0.46686" scale="0.3 0.3 0.3" rotation="-20.33 90 -17" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="-0.94549 1.12953 0.60711" rotation="-10 125.47000000000001 15.010000000000002" dynamic-body="sphereRadius: NaN" velocity="" scale="2 2 2"></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-0.86731 1.32238 1.163" scale="0.4 0.4 0.4" rotation="-21.49 158.09 -10" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+        <a-entity gltf-model="#baleine-glb" position="0.70565 1.1336 -1.15795" rotation="-18.79 0 15.950000000000001" dynamic-body="sphereRadius: NaN" velocity="" scale="1.5 1.5 1.5"></a-entity>
+        <a-entity gltf-model="#ourson-glb" position="-1.14657 1.24484 -1.11816" scale="0.6 0.6 0.6" rotation="-26.220000000000002 157.79000000000002 -11.39" dynamic-body="sphereRadius: NaN" velocity=""></a-entity>
+
+
+<!-- murs -->
+        <a-plane position="-0.750 1.25 -1.5" src="#wall1" rotation="180 0 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="0.750 1.25 -1.5" src="#wall1" rotation="180 0 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="-1.5 1.25 -0.75" src="#wall1" rotation="180 90 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="-1.5 1.25 0.75" src="#wall1" rotation="180 90 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="-0.750 1.25 1.5" src="#wall1" rotation="180 0 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="0.750 1.25 1.5" src="#wall1" rotation="180 0 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="1.5 1.25 0.75" src="#wall1" rotation="180 90 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+        <a-plane position="1.5 1.25 -0.75" src="#wall1" rotation="180 90 0" scale="1.5 2.5 3" material="side:double" static-body></a-plane>
+
+
+<!-- plafond et sol -->
+        <a-plane position="0 2.5 0" src="#kilim1" rotation="90 0 0" scale="3 3 3" material="side:double" static-body></a-plane>
+        <a-plane position="0 0 0" src="#kilim1" rotation="-90 0 0" width="3" height="3" color="silver" static-body></a-plane>   
+
+        
+<!-- environnement -->
+        <a-entity light="type: point; intensity: 2; distance: 19.19; decay: 1.71; color: #f0ce8e; castShadow: false" position="0 1.2 0"></a-entity>
+        <a-entity camera look-controls wasd-controls="acceleration: 5" position="0 1.6 0"></a-entity>
+
+    </a-scene>
+   
+
+</body>
+
+</html>
