@@ -15,13 +15,13 @@
 
     <a-scene arjs="sourceType: webcam; trackingMethod: best; detectionMode: mono;">
         <a-assets>
-            <a-asset-item id="perso" src="./assets/3Danims/truffle_man.glb"></a-asset-item>
+            <a-asset-item id="perso" src="./assets/3Danims/birds/Flamingo.glb"></a-asset-item>
 
         </a-assets>
         
         <a-marker preset="custom" type="pattern" url="./assets/markers/pattern_marker.patt">
             <a-entity id="animal"
-                position="0 0 0" scale="5 5 5" rotation="0 0 0"
+                position="0 0 0" scale="1 1 1" rotation="0 0 0"
                 gltf-model="#perso" animation-mixer>
             </a-entity>
         </a-marker>
@@ -31,6 +31,5 @@
     </a-scene>
 
 </body>
-
 
 </html>
