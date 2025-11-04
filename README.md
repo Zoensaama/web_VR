@@ -18,7 +18,8 @@
 
 
 ## AR
-* [testAR](https://zoensaama.github.io/web_VR/test_ARRGH.html)
+* [testAR](https://zoensaama.github.io/web_VR/testARRGH.html)
+
 
 
 
