@@ -25,7 +25,7 @@
 ** [nat1](https://zoensaama.github.io/web_VR/skybox/skybox_nathan_1.html)
 ** [nat2](https://zoensaama.github.io/web_VR/skybox/skybox_nathan_2.html)
 ** [Sam](https://zoensaama.github.io/web_VR/skybox_Sam.html)
-** [Sara](https://zoensaama.github.io/web_VR/skybox_Sara.html)
+** [Sara](https://zoensaama.github.io/web_VR/skybox/skybox_Sara.html)
 
 
 
