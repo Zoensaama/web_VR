@@ -20,12 +20,13 @@
 ## AR
 * [testAR](https://zoensaama.github.io/web_VR/anim_perso_AR.html)
 
-## PAYSAGE
-** [paysage](https://zoensaama.github.io/web_VR/skybox/skybox.html)
+## SKYBOX
+* [Skybox](https://zoensaama.github.io/web_VR/skybox/skybox.html)
 ** [nat1](https://zoensaama.github.io/web_VR/skybox/skybox_nathan_1.html)
 ** [nat2](https://zoensaama.github.io/web_VR/skybox/skybox_nathan_2.html)
 ** [Sam](https://zoensaama.github.io/web_VR/skybox_Sam.html)
 ** [Sara](https://zoensaama.github.io/web_VR/skybox/skybox_Sara.html)
+
 
 
 
